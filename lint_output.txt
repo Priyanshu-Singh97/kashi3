@@ -1,0 +1,78 @@
+﻿
+> kashi@0.1.0 lint
+> eslint
+
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\app\booking\page.tsx
+   67:3   error    React Hook "useEffect" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?  react-hooks/rules-of-hooks
+  103:28  warning  'response' is defined but never used                                                                                                                                                         @typescript-eslint/no-unused-vars
+  103:38  error    Unexpected any. Specify a different type                                                                                                                                                     @typescript-eslint/no-explicit-any
+  131:34  error    Unexpected any. Specify a different type                                                                                                                                                     @typescript-eslint/no-explicit-any
+  132:52  error    Unexpected any. Specify a different type                                                                                                                                                     @typescript-eslint/no-explicit-any
+  386:49  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                              react/no-unescaped-entities
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\components\dashboard\admin-dashboard.tsx
+   15:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\components\dashboard\admin-dashboard.tsx:15:5
+  13 |
+  14 |   useEffect(() => {
+> 15 |     setBookings(getBookings());
+     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  16 |   }, []);
+  17 |
+  18 |   const totalRevenue = bookings  react-hooks/set-state-in-effect
+  210:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @next/next/no-img-element
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\components\dashboard\guide-dashboard.tsx
+  13:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\components\dashboard\guide-dashboard.tsx:13:5
+  11 |   useEffect(() => {
+  12 |     // For demo, show all bookings (in production, filter by guide's ID)
+> 13 |     setBookings(getBookings());
+     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  14 |   }, []);
+  15 |
+  16 |   const totalEarnings = bookings  react-hooks/set-state-in-effect
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\components\hero-section.tsx
+  3:8   warning  'Image' is defined but never used             @typescript-eslint/no-unused-vars
+  7:10  warning  'scrollY' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\generate-placeholders.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\lib\auth-context.tsx
+  77:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\LENOVO LOQ\OneDrive\Desktop\kashi-platform-design\lib\auth-context.tsx:77:9
+  75 |     if (stored) {
+  76 |       try {
+> 77 |         setUser(JSON.parse(stored));
+     |         ^^^^^^^ Avoid calling setState() directly within an effect
+  78 |       } catch {
+  79 |         deleteCookie("kashi_user");
+  80 |       }  react-hooks/set-state-in-effect
+
+Γ£û 14 problems (10 errors, 4 warnings)
+
