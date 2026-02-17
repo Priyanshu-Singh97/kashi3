@@ -195,7 +195,7 @@ export const guides: Guide[] = [
     name: "Priyanshu Singh",
     image: "/images/priyanshu.jpeg",
     intro:
-      "Born and raised in the lanes of Kashi, Rajesh has spent 18 years uncovering the hidden heritage of Varanasi. His heritage walks reveal temples, shrines, and stories that no guidebook contains.",
+      "Born and raised in the lanes of Kashi, Priyanshu has spent 18 years uncovering the hidden heritage of Varanasi. His heritage walks reveal temples, shrines, and stories that no guidebook contains.",
     specializations: ["Heritage Walks", "Hidden Temples", "Architecture Tours"],
     languages: ["Hindi", "English", "Sanskrit"],
     experience: "18 years",
@@ -210,19 +210,19 @@ export const guides: Guide[] = [
     reviews: [
       {
         name: "Ananya M.",
-        text: "Rajesh showed us temples I could never have found on my own. His knowledge of Kashi's history is extraordinary.",
+        text: "Priyanshu showed us temples I could never have found on my own. His knowledge of Kashi's history is extraordinary.",
         rating: 5,
         date: "Jan 2026",
       },
       {
         name: "Thomas B.",
-        text: "An unforgettable experience. Rajesh made us feel like we were walking through living history.",
+        text: "An unforgettable experience. Priyanshu made us feel like we were walking through living history.",
         rating: 5,
         date: "Dec 2025",
       },
       {
         name: "Priya S.",
-        text: "Best guide experience in India. Period. Rajesh's storytelling is captivating.",
+        text: "Best guide experience in India. Period. Priyanshu's storytelling is captivating.",
         rating: 5,
         date: "Nov 2025",
       },
@@ -233,7 +233,7 @@ export const guides: Guide[] = [
     name: "Sahaj Jaiswal",
     image: "/images/sahaj.jpeg",
     intro:
-      "A passionate food historian and culinary guide, Meera takes you through the forgotten food lanes of Banaras where recipes have been passed down for centuries.",
+      "A passionate food historian and culinary guide, Sahaj takes you through the forgotten food lanes of Banaras where recipes have been passed down for centuries.",
     specializations: ["Food Tours", "Culinary Heritage", "Market Walks"],
     languages: ["Hindi", "English", "Bhojpuri"],
     experience: "12 years",
@@ -248,13 +248,13 @@ export const guides: Guide[] = [
     reviews: [
       {
         name: "Rahul K.",
-        text: "Meera introduced us to flavors I never knew existed in Varanasi. The kachori gali experience was life-changing.",
+        text: "Sahaj introduced us to flavors I never knew existed in Varanasi. The kachori gali experience was life-changing.",
         rating: 5,
         date: "Jan 2026",
       },
       {
         name: "Sarah L.",
-        text: "As a food writer, I thought I knew Indian cuisine. Meera proved me wrong in the best way possible.",
+        text: "As a food writer, I thought I knew Indian cuisine. Sahaj proved me wrong in the best way possible.",
         rating: 5,
         date: "Dec 2025",
       },
@@ -265,7 +265,7 @@ export const guides: Guide[] = [
     name: "Somesh Tripathi",
     image: "/images/somesh.jpeg",
     intro:
-      "A spiritual guide with deep roots in the ancient traditions of Kashi. Pandit Vishwanath offers transformative spiritual journeys that connect you with the eternal soul of the city.",
+      "A spiritual guide with deep roots in the ancient traditions of Kashi. Somesh offers transformative spiritual journeys that connect you with the eternal soul of the city.",
     specializations: [
       "Spiritual Tours",
       "Meditation Sessions",
@@ -284,13 +284,13 @@ export const guides: Guide[] = [
     reviews: [
       {
         name: "David W.",
-        text: "A truly life-changing experience. Pandit ji's depth of spiritual knowledge is remarkable.",
+        text: "A truly life-changing experience. Somesh ji's depth of spiritual knowledge is remarkable.",
         rating: 5,
         date: "Feb 2026",
       },
       {
         name: "Kamala R.",
-        text: "The midnight ritual at the ghat with Pandit Vishwanath was the most profound experience of my life.",
+        text: "The midnight ritual at the ghat with Somesh was the most profound experience of my life.",
         rating: 5,
         date: "Jan 2026",
       },
@@ -301,7 +301,7 @@ export const guides: Guide[] = [
     name: "Shaurya Gupta",
     image: "/images/shaurya.jpeg",
     intro:
-      "A young photographer and cultural storyteller, Arjun combines visual artistry with deep local knowledge to create unique exploratory experiences through Kashi's lanes.",
+      "A young photographer and cultural storyteller, Shaurya combines visual artistry with deep local knowledge to create unique exploratory experiences through Kashi's lanes.",
     specializations: [
       "Photography Walks",
       "Cultural Stories",
@@ -320,13 +320,13 @@ export const guides: Guide[] = [
     reviews: [
       {
         name: "Yuki T.",
-        text: "Arjun found the most incredible photo spots. My Instagram has never looked better!",
+        text: "Shaurya found the most incredible photo spots. My Instagram has never looked better!",
         rating: 5,
         date: "Jan 2026",
       },
       {
         name: "Michael H.",
-        text: "A unique experience. Arjun's eye for detail and knowledge of hidden spots is impressive.",
+        text: "A unique experience. Shaurya's eye for detail and knowledge of hidden spots is impressive.",
         rating: 4,
         date: "Dec 2025",
       },

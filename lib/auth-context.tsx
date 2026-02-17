@@ -1,4 +1,4 @@
-"use client";
+-"use client";
 
 import {
   createContext,
@@ -59,7 +59,7 @@ const DEMO_USERS: (User & { password: string })[] = [
   },
   {
     id: "guide-demo",
-    name: "Rajesh Sharma",
+    name: "Priyanshu Singh",
     email: "guide@kashi.com",
     password: "guide123",
     role: "guide",
