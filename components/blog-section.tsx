@@ -19,7 +19,7 @@ export const blogPosts = [
     title: "Beyond Vishwanath: The Secret Temples",
     excerpt:
       "Everyone knows Kashi Vishwanath. But the city holds over 2,000 temples, most hidden in plain sight within its ancient lanes. Discover the temples that guidebooks forgot.",
-    image: "/images/narrow-lanes.svg",
+    image: "/images/kali.jpeg",
     date: "February 3, 2026",
     readTime: "10 min read",
   },
@@ -78,7 +78,7 @@ function BlogCard({
   post: (typeof blogPosts)[number];
   index: number;
 }) {
-  const { ref, isVisible } = useScrollReveal(0.1);
+  const { ref, isVisible } = useScrollReveal<HTMLElement>(0.1);
 
   return (
     <article

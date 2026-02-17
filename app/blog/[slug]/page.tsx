@@ -48,7 +48,7 @@ const articles: Record<
     title: "Beyond Vishwanath: The Secret Temples",
     description:
       "Everyone knows Kashi Vishwanath. But the city holds over 2,000 temples, most hidden in plain sight.",
-    image: "/images/narrow-lanes.jpg",
+    image: "/images/kali.jpeg",
     date: "February 3, 2026",
     readTime: "10 min read",
     content: [

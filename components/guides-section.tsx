@@ -19,9 +19,8 @@ export function GuidesSection() {
       <div className="relative mx-auto max-w-7xl px-6">
         <div
           ref={ref}
-          className={`mb-12 text-center transition-all duration-700 md:mb-16 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`mb-12 text-center transition-all duration-700 md:mb-16 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           <p className="mb-3 text-sm font-medium tracking-[0.3em] uppercase text-accent">
             Local Companions
@@ -76,15 +75,14 @@ function GuideCard({
   guide: (typeof guides)[number];
   index: number;
 }) {
-  const { ref, isVisible } = useScrollReveal(0.1);
+  const { ref, isVisible } = useScrollReveal<HTMLAnchorElement>(0.1);
 
   return (
     <Link
       href={`/guides/${guide.id}`}
       ref={ref}
-      className={`group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/50 transition-all duration-700 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`group flex flex-col overflow-hidden rounded-2xl border border-border bg-card/50 transition-all duration-700 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       <div className="relative aspect-[4/5] overflow-hidden">
@@ -109,11 +107,10 @@ function GuideCard({
               {Array.from({ length: 5 }).map((_, i) => (
                 <svg
                   key={i}
-                  className={`h-3.5 w-3.5 ${
-                    i < Math.round(guide.rating)
+                  className={`h-3.5 w-3.5 ${i < Math.round(guide.rating)
                       ? "text-accent"
                       : "text-border"
-                  }`}
+                    }`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   aria-hidden="true"

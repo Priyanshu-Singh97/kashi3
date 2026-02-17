@@ -24,9 +24,8 @@ export function ExploreSection() {
         {/* Header */}
         <div
           ref={ref}
-          className={`mb-12 text-center transition-all duration-700 md:mb-16 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`mb-12 text-center transition-all duration-700 md:mb-16 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           <p className="mb-3 text-sm font-medium tracking-[0.3em] uppercase text-accent">
             The Main Highlight
@@ -45,11 +44,10 @@ export function ExploreSection() {
         <div className="mb-10 flex flex-wrap items-center justify-center gap-3">
           <button
             onClick={() => setActiveCategory(null)}
-            className={`rounded-full border px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
-              activeCategory === null
+            className={`rounded-full border px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${activeCategory === null
                 ? "border-accent bg-accent text-accent-foreground"
                 : "border-border bg-card/50 text-foreground/60 hover:border-accent/50 hover:text-foreground"
-            }`}
+              }`}
           >
             All
           </button>
@@ -61,11 +59,10 @@ export function ExploreSection() {
                   activeCategory === cat.slug ? null : cat.slug
                 )
               }
-              className={`rounded-full border px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
-                activeCategory === cat.slug
+              className={`rounded-full border px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${activeCategory === cat.slug
                   ? "border-accent bg-accent text-accent-foreground"
                   : "border-border bg-card/50 text-foreground/60 hover:border-accent/50 hover:text-foreground"
-              }`}
+                }`}
             >
               {cat.label}
             </button>
@@ -92,14 +89,13 @@ function PlaceCard({
   index: number;
 }) {
   const [expanded, setExpanded] = useState(false);
-  const { ref, isVisible } = useScrollReveal(0.1);
+  const { ref, isVisible } = useScrollReveal<HTMLElement>(0.1);
 
   return (
     <article
       ref={ref}
-      className={`group flex flex-col overflow-hidden border border-border bg-card transition-all duration-700 hover:border-accent/50 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`group flex flex-col overflow-hidden border border-border bg-card transition-all duration-700 hover:border-accent/50 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
       style={{ transitionDelay: `${index * 80}ms` }}
     >
       {/* Image */}
@@ -134,9 +130,8 @@ function PlaceCard({
 
         {/* Expandable deeper content */}
         <div
-          className={`overflow-hidden transition-all duration-500 ${
-            expanded ? "mt-4 max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-          }`}
+          className={`overflow-hidden transition-all duration-500 ${expanded ? "mt-4 max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+            }`}
         >
           <div className="border-t border-border pt-4">
             <h4 className="mb-1 text-xs font-semibold uppercase tracking-wider text-accent">
@@ -160,9 +155,8 @@ function PlaceCard({
           >
             {expanded ? "Less" : "Learn More"}
             <svg
-              className={`h-3 w-3 transition-transform duration-300 ${
-                expanded ? "rotate-180" : ""
-              }`}
+              className={`h-3 w-3 transition-transform duration-300 ${expanded ? "rotate-180" : ""
+                }`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

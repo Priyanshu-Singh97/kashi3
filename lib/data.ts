@@ -160,7 +160,7 @@ export const unexploredPlaces: UnexploredPlace[] = [
     category: "Unexplored Temples",
     categorySlug: "forgotten-temples",
     title: "The Original Well of Gyan Vapi",
-    image: "/images/rituals.svg",
+    image: "/images/gyan.jpeg",
     intro:
       "Few know about the smaller, older well located three lanes away from the famous Gyan Vapi, surrounded by ancient carvings that blur Hindu and Buddhist iconography.",
     whyUnexplored:
@@ -193,7 +193,7 @@ export const guides: Guide[] = [
   {
     id: "guide-1",
     name: "Priyanshu Singh",
-    image: "/images/guide-1.svg",
+    image: "/images/priyanshu.jpeg",
     intro:
       "Born and raised in the lanes of Kashi, Rajesh has spent 18 years uncovering the hidden heritage of Varanasi. His heritage walks reveal temples, shrines, and stories that no guidebook contains.",
     specializations: ["Heritage Walks", "Hidden Temples", "Architecture Tours"],
@@ -231,7 +231,7 @@ export const guides: Guide[] = [
   {
     id: "guide-2",
     name: "Sahaj Jaiswal",
-    image: "/images/guide-2.svg",
+    image: "/images/sahaj.jpeg",
     intro:
       "A passionate food historian and culinary guide, Meera takes you through the forgotten food lanes of Banaras where recipes have been passed down for centuries.",
     specializations: ["Food Tours", "Culinary Heritage", "Market Walks"],
@@ -263,7 +263,7 @@ export const guides: Guide[] = [
   {
     id: "guide-3",
     name: "Somesh Tripathi",
-    image: "/images/guide-3.svg",
+    image: "/images/somesh.jpeg",
     intro:
       "A spiritual guide with deep roots in the ancient traditions of Kashi. Pandit Vishwanath offers transformative spiritual journeys that connect you with the eternal soul of the city.",
     specializations: [
@@ -299,7 +299,7 @@ export const guides: Guide[] = [
   {
     id: "guide-4",
     name: "Shaurya Gupta",
-    image: "/images/guide-4.svg",
+    image: "/images/shaurya.jpeg",
     intro:
       "A young photographer and cultural storyteller, Arjun combines visual artistry with deep local knowledge to create unique exploratory experiences through Kashi's lanes.",
     specializations: [
